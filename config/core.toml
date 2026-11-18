@@ -1,0 +1,16 @@
+# Core service configuration (keys to be filled in).
+
+[control]
+transport = "unix"            # or "tcp"
+path      = "/run/big-boss/control.sock"
+
+[telemetry]
+path = "/run/big-boss/telemetry.sock"
+
+[links.tracker]
+[links.processing]
+[links.manipulator]
+[sim]
+[video]
+[vr]
+[logger]

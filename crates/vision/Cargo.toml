@@ -1,0 +1,9 @@
+[package]
+name = "vision"
+description = "Hand-eye calibration and camera-mode analysis"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+protocol = { workspace = true }

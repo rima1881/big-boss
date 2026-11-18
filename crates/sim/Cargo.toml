@@ -1,0 +1,9 @@
+[package]
+name = "sim"
+description = "SimRobot, scenarios and physics"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+protocol = { workspace = true }

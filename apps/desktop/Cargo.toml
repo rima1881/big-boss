@@ -1,0 +1,11 @@
+[package]
+name = "desktop"
+description = "Slint desktop client"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+protocol  = { workspace = true }
+transport = { workspace = true }
+video     = { workspace = true }

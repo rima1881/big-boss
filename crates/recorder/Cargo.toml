@@ -1,0 +1,9 @@
+[package]
+name = "recorder"
+description = "Packet logging (MCAP) and replay"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+protocol = { workspace = true }

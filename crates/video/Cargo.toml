@@ -1,0 +1,13 @@
+[package]
+name = "video"
+description = "Camera decode and the shared-memory frame ring"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+default = []
+decode = []  # enables GStreamer decoding (core side only)
+
+[dependencies]
+protocol = { workspace = true }

@@ -1,0 +1,1 @@
+//! msg_type codes: 0x0_ tracker, 0x1_ processing, 0x2_ robot, 0x3_ safety, 0x4_ VR.

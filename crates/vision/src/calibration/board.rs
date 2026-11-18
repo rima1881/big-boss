@@ -1,0 +1,1 @@
+//! ChArUco / ArUco board detection.

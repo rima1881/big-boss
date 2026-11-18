@@ -1,0 +1,21 @@
+[package]
+name = "service"
+description = "Core service logic (headless)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+default = ["sim", "vision", "video", "recorder"]
+sim = ["dep:sim"]
+vision = ["dep:vision"]
+video = ["dep:video"]
+recorder = ["dep:recorder"]
+
+[dependencies]
+protocol  = { workspace = true }
+transport = { workspace = true }
+sim       = { workspace = true, optional = true }
+vision    = { workspace = true, optional = true }
+video     = { workspace = true, optional = true }
+recorder  = { workspace = true, optional = true }

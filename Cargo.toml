@@ -1,0 +1,50 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/protocol",
+    "crates/transport",
+    "crates/video",
+    "crates/sim",
+    "crates/vision",
+    "crates/recorder",
+    "crates/service",
+    "apps/core-service",
+    "apps/desktop",
+    "apps/tools",
+]
+exclude = ["firmware"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Proprietary"
+
+[workspace.dependencies]
+# Internal crates
+protocol  = { path = "crates/protocol" }
+transport = { path = "crates/transport" }
+video     = { path = "crates/video" }
+sim       = { path = "crates/sim" }
+vision    = { path = "crates/vision" }
+recorder  = { path = "crates/recorder" }
+service   = { path = "crates/service" }
+
+# External crates: uncomment as each part gets implemented
+# serde        = { version = "1", default-features = false, features = ["derive"] }
+# postcard     = "1"
+# zerocopy     = { version = "0.8", features = ["derive"] }
+# tokio        = { version = "1", features = ["full"] }
+# tokio-seqpacket = "0.8"
+# serialport   = "4"
+# nix          = { version = "0.29", features = ["socket", "mman", "fs"] }
+# rtrb         = "0.3"
+# gstreamer    = "0.23"
+# gstreamer-app = "0.23"
+# rapier3d     = "0.22"
+# opencv       = "0.93"
+# ort          = "2"
+# nalgebra     = "0.33"
+# mcap         = "0.10"
+# slint        = "1"
+# tracing      = "0.1"
+# toml         = "0.8"

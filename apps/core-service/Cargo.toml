@@ -1,0 +1,9 @@
+[package]
+name = "core-service"
+description = "Headless core service binary"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+service = { workspace = true }
